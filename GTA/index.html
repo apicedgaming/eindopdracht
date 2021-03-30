@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto V</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/shop-styles.css" type="text/css">
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon-32x32.png"/>
+</head>
+<body onload="lodingAnimation()">
+    <header id="head" style="display: none;">
+        <div class="flex">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="GTA V logo"></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="nav-menu">
+                   <span class="strip"></span>
+                   <span class="strip"></span>
+                   <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-items">
+                    <li><a class="nav-link active"  href="./index.html">Home</a></li>
+                    <li><a class="nav-link" href="./shop.html">Shop</a></li>
+                    <li><a class="nav-link" href="./links.html">Usefull Links</a></li>
+                </ul>
+            </nav>
+            <!-- <a href="#" id="cart-button">My Cart</a> -->
+            <div class="shoppping__cart">
+                <ul>
+                    <li class="sub__menu">
+                        <img src="./images/cart.png" alt="">
+                       <div id="shopping__list">
+                           <table id="cart__content" class="full_width">
+                              <thead>
+                                  <tr>
+                                      <th>Image</th>
+                                      <th>Name</th>
+                                      <th>Price</th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                           </table>
+                           <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                       </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" style="display: none;">
+        <section id="main-image">
+            <div class="main-text">
+                <h1>The best open-world game out there!</h1>
+                <h5>Los Santos: a sprawling sun-soaked metropolis full of self-help gurus, starlets, and fading celebrities, 
+                    once the envy of the Western world, now struggling to stay afloat in an era of economic uncertainty and 
+                    cheap reality TV.</h5>
+            </div>
+        </section>
+
+        <section id="game-info-boxes">
+            <h2 style="text-align: center;">Game Information</h2>
+            <div class="flex">
+                <div class="box introduction">
+                    <div class="shade">
+                        <span class="badge introduction">Introduction</span>
+                        <div class="contents">
+                            <p>Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. 
+                                It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="box specifications">
+                    <div class="shade">
+                        <span class="badge specifications">Specifications</span>
+                        <div class="contents">
+                            <p><ul>
+                                <li>Developer :<b>Rockstar North</b></li>
+                                <li>Platform :<b>PS5, PS4, Xbox One, PC, PS3, Xbox 360</b></li>
+                                <li>Release Date :<b>September 17,2013</b></li>
+                            </ul></p>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div class="box story">
+                    <div class="shade">
+                        <span class="badge story">Story</span>
+                        <div class="contents">
+                            <p>Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three 
+                                protagonists—retired bank robber Michael De Santa, street gangster Franklin Clinton, and drug dealer and arms 
+                                smuggler Trevor Philips.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box multiplayer">
+                    <div class="shade">
+                        <span class="badge multiplayer">Multiplayer</span>
+                        <div class="contents">
+                            <p>The open world design lets players freely roam San Andreas' open countryside and 
+                                the fictional city of Los Santos, based on Los Angeles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trailers">
+            <div class="flex">
+                <span class="badge videos">Videos</span>
+                <div class="box">
+                    <span class="badge trailer">Game Trailer</span>
+                    <div class="trailer-video">
+                        <iframe src="https://www.youtube.com/embed/QkkoHAzjnUs" title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="trailer-content">
+                        <h3>This is the official trailer for GTA V</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="badge trailer">Gameplay Trailer</span>
+                    <div class="trailer-video">
+                        <iframe src="https://www.youtube.com/embed/N-xHcvug3WI" title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                    </div>
+                    <div class="trailer-content">
+                        <h3>This is the official gameplay of GTA V</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="loader"></div>
+
+    <footer id="foot" style="display: none;">
+        Copyright &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved
+    </footer>
+
+    
+
+    <script>
+        var myVar;
+
+        function lodingAnimation() {
+            myVar = setTimeout(showPage, 2000);
+        }
+
+        function showPage() {
+            console.log('hello');
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("head").style.display = "block";
+            document.getElementById("main").style.display = "block";
+            document.getElementById("foot").style.display = "block";
+        }
+
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            let navMenu = document.getElementById('nav-menu-items');
+            navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+        });
+
+        
+    </script>
+</body>
+</html>

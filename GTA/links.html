@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto V</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/shop-styles.css" type="text/css">
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon-32x32.png"/>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="GTA V logo"></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="nav-menu">
+                   <span class="strip"></span>
+                   <span class="strip"></span>
+                   <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-items">
+                    <li><a class="nav-link"  href="./index.html">Home</a></li>
+                    <li><a class="nav-link" href="./shop.html">Shop</a></li>
+                    <li><a class="nav-link active" href="./links.html">Usefull Links</a></li>
+                </ul>
+            </nav>
+            <!-- <a href="#" id="cart-button">My Cart</a> -->
+            <div class="shoppping__cart">
+                <ul>
+                    <li class="sub__menu">
+                        <img src="./images/cart.png" alt="">
+                       <div id="shopping__list">
+                           <table id="cart__content" class="full_width">
+                              <thead>
+                                  <tr>
+                                      <th>Image</th>
+                                      <th>Name</th>
+                                      <th>Price</th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                           </table>
+                           <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                       </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="links-image">
+            <div class="links-text">
+                <h1>Here are some usefull links related to the website</h1>
+                <h5>This section contains the reference links to resources used in the website</h5>
+            </div>
+        </section>
+
+        <section id="links">
+            <div class="flex" >
+                <div class="box">
+                    <h3>Resources : </h3>
+                    <ul>
+                        <li>
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="https://www.rockstargames.com/V/">Official Game Website</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_V">Wikipedia Page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Images</h4>
+                                <ul>
+                                    <li><a href="https://www.rockstargames.com/V/downloads">Images from Official Website</a></li>
+                                    <li><a href="https://www.clipartmax.com/middle/m2H7K9N4Z5d3i8N4_gta-clipart-ico-gta-v-logo-png/">Game Logo</a></li>
+                                    <li><a href="https://www.kindpng.com/imgv/hTTxxTT_gta-v-characters-png-transparent-png/">Game Character Image</a></li>
+                                </ul>                                
+                            </li>
+                        <li>
+                            <h4>Other</h4>
+                                <ul>
+                                    <li><a href="https://youtu.be/QkkoHAzjnUs">Official Trailer</a></li>
+                                    <li><a href="https://youtu.be/N-xHcvug3WI">Official Gameplay</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="./images/back.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved
+    </footer>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            let navMenu = document.getElementById('nav-menu-items');
+            navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto V | Shop</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./css/shop-styles.css" type="text/css">
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon-32x32.png"/>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="GTA V logo"></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="nav-menu">
+                   <span class="strip"></span>
+                   <span class="strip"></span>
+                   <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-items">
+                    <li><a class="nav-link"  href="./index.html">Home</a></li>
+                    <li><a class="nav-link active" href="./shop.html">Shop</a></li>
+                    <li><a class="nav-link" href="./links.html">Usefull Links</a></li>
+                </ul>
+            </nav>
+            <!-- <a href="#" id="cart-button">My Cart</a> -->
+            <div class="shoppping__cart">
+                <ul>
+                    <li class="sub__menu">
+                        <img src="./images/cart.png" alt="">
+                       <div id="shopping__list">
+                           <table id="cart__content" class="full_width">
+                              <thead>
+                                  <tr>
+                                      <th>Image</th>
+                                      <th>Name</th>
+                                      <th>Price</th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                           </table>
+                           <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+                       </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="shop-image">
+            <div class="shop-text">
+                <h1>What are you waiting for? Buy now and join the fun!</h1>
+                <h5>Available on PC and all major consoles worldwide. Buy now and play with your friends!</h5>
+            </div>
+        </section>
+
+        <section>
+            <div id="shop-boxes" class="container">
+                <h2 id="heading" class="heading">Available Choices</h2>
+                <div class="row__content">
+                    <div class="four columns" id="grid__column">
+                        <div class="card">
+                            <img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fgrand-theft-auto-v%2Fhome%2FGTAV_EGS_Artwork_1920x1080_Hero-Carousel_V06-1920x1080-1503e4b1320d5652dd4f57466c8bcb79424b3fc0.jpg?h=1080&resize=1&w=1920" alt="image 1" class="shop-image_1">
+                            <div class="info-card">
+                                <h4>Buy Grand Theft Auto V: Premium Edition , No Bundels</h4>
+                                <p>Includes 2 items: Grand Theft Auto V, Grand Theft Auto V - Criminal Enterprise Starter Pack</p>
+                                <p class="price">$79.99  <span class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                        <div class="card">
+                            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202101/2019/YjuGmx8aOaPnFaRup8XuOqdx.jpg?w=1920&thumb=false" alt="image 2" class="shop-image_1">
+                            <div class="info-card">
+                                <h4>Buy GTA V: with Great White Shark Card Bundle</h4>
+                                <p>Includes 3 items: GTA V, Criminal Enterprise Starter Pack, Great White Shark Card (Starter Pack Bundle)</p>
+                                <p class="price">$99.99  <span class="u-pull-right ">$20</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                        <div class="card">
+                            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202101/2019/A7bNiu2YBVKYLeEviv8DpcVg.jpg?w=1920&thumb=false" alt="image 3" class="shop-image_1">
+                            <div class="info-card">
+                                <h4>Buy GTA V: with Megalodon Shark Card Bundle</h4>
+                                <p>Includes 3 items: GTA V, GTA- Criminal Enterprise Starter Pack, GTA V: Megalodon Shark (Starter Pack Bundle)</p>
+                                <p class="price">$199.99  <span class="u-pull-right ">$50</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy; <script>document.write(new Date().getFullYear())</script> All rights reserved
+    </footer>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            let navMenu = document.getElementById('nav-menu-items');
+            navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+        });
+    </script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
